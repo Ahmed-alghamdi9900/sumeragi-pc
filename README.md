@@ -41,6 +41,6 @@ The database and exports are private and ignored by Git.
 See PROJECT_STATE.md, BUILD_WINDOWS.md, LEGAL_BOUNDARIES.md, and the complete
 user instructions in docs/CANONICAL_PROJECT_INSTRUCTIONS.md.
 
-GitHub repository creation is pending owner browser sign-in; no public release exists.
+GitHub public repository creation is pending visibility approval; no public release exists.
 A redistribution license has not yet
 been selected; do not represent this initial repository as licensed for release.

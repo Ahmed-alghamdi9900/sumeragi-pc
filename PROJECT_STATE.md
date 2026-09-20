@@ -16,7 +16,7 @@ PS4 behavioral comparison exists.
 
 Implemented initial local probe, local SQLite registry, portable exports, catalog
 schemas, synthetic test infrastructure and public-project documentation. The final
-suite ran 28 tests: 27 passed, one skipped for Windows symlink-creation permission.
+suite ran 29 tests: 28 passed, one skipped for Windows symlink-creation permission.
 Independent review completed; see evidence/initial-batch-20260920.md.
 
 User confirms only the packages are available. The present probe reads public
@@ -27,5 +27,6 @@ game-file inventory. Private compact bundle: reports/initial-20260920-r3/SUMERAG
 
 GitHub owner verified through connector: Ahmed-alghamdi9900. Local Git uses that
 login and GitHub noreply address; initial branch codex/initial-reconnaissance.
-No remote exists yet. Connector lists no repositories; browser creation awaits
-owner sign-in. Nothing has been published.
+Initial commit fa33d8a saved the reviewed startup batch. No remote exists yet.
+Browser is signed in; public repository creation awaits explicit visibility approval
+after automatic approval review rejected the creation click. Nothing is published.

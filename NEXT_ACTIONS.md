@@ -9,9 +9,9 @@
    needed; never request full-game uploads or implement bypass/decryption.
 5. Verify edition/patch/content against local evidence and official content list.
 6. Choose the smallest executable or archive experiment; architecture remains open.
-7. Local author configured from verified GitHub account. Finish audited local commit.
-   GitHub repository creation is pending owner sign-in to browser; connected API
-   provides no repository-creation tool. Audit distributable files before push.
+7. Initial local commit fa33d8a completed. GitHub public repository creation is pending
+   explicit visibility approval after automatic review rejection; browser signed in.
+   Connected API provides no repository-creation tool. Audit files before push.
 
 Current source limitation: owner confirms only packages, no extracted folder.
 Preserve the 1.02 update as a candidate canonical patch. Verify latest official

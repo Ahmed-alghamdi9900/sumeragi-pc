@@ -1,6 +1,9 @@
 import importlib.util
 import json
 import sqlite3
+import os
+import subprocess
+import sys
 import tempfile
 import unittest
 from pathlib import Path
@@ -10,6 +13,22 @@ memory = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(memory)
 
 class MemoryTests(unittest.TestCase):
+    def test_search_cli_handles_japanese_on_legacy_terminal(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            memory.init(root)
+            with memory.connect(root) as db:
+                if db.execute("SELECT value FROM settings WHERE key='fts5'").fetchone()[0] != 'available':
+                    self.skipTest('SQLite build lacks FTS5')
+                db.execute('INSERT INTO knowledge VALUES (?,?,?,?,?,?,?)',
+                           ('jp','build','CUSA01159','source','UNKNOWN','戦国','startup-source'))
+            env = dict(os.environ, PYTHONIOENCODING='ascii:strict')
+            result = subprocess.run([sys.executable, str(Path(memory.__file__)), 'search',
+                                     '--root', str(root), '--query', 'CUSA01159'],
+                                    env=env, capture_output=True, check=True)
+            decoded = json.loads(result.stdout.decode('ascii'))
+            self.assertIn('戦国', decoded[0][1])
+
     def test_search_tracks_changes(self):
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)

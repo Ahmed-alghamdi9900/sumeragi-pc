@@ -154,7 +154,8 @@ def main():
     elif args.action == 'search':
         if not args.query:
             parser.error('search requires --query')
-        print(json.dumps(search(args.root, args.query), ensure_ascii=False, indent=2))
+        # Windows terminals may use legacy encodings. Escaped JSON remains lossless.
+        print(json.dumps(search(args.root, args.query), ensure_ascii=True, indent=2))
     else:
         if not args.id or not args.claim:
             parser.error('record requires --id and --claim')

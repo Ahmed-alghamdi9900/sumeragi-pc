@@ -48,3 +48,9 @@ the bundle describes their association without claiming an atomic capture.
 Blocked game-dependent work: only packages available. Need accessible game logic
 and assets before executable feasibility/architecture experiments. Port functionality
 and translation both remain 0% validated; total scope cannot yet be measured.
+
+Follow-up validation: actual knowledge search with Japanese source metadata failed
+on the Windows legacy terminal encoding. JSON output now escapes non-ASCII text
+losslessly. A subprocess test with strict ASCII output reproduces the constraint.
+Full suite rerun: 29 tests, 28 pass, one permission skip; see the follow-up log.
+Initial fingerprint file describes the first batch, not this follow-up change.

@@ -11,4 +11,5 @@
 - Synthetic parser passes do not establish game compatibility or boot milestones.
 - GitHub connector can list/manipulate existing repositories but has no repository
   creation endpoint. It currently lists zero accessible repositories. Browser
-  creation requires owner sign-in (handoff page opened); do not ask for credentials.
+  browser is now signed in. Automatic review rejected public creation until explicit
+  visibility approval; pending question asks public versus private. Do not bypass.

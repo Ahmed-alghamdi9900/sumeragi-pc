@@ -1,0 +1,38 @@
+test_idempotent_init_preserves_catalog_and_exports_evidence (test_memory.MemoryTests.test_idempotent_init_preserves_catalog_and_exports_evidence) ... ok
+test_scan_import_rolls_back_invalid_manifest (test_memory.MemoryTests.test_scan_import_rolls_back_invalid_manifest) ... ok
+test_search_cli_handles_japanese_on_legacy_terminal (test_memory.MemoryTests.test_search_cli_handles_japanese_on_legacy_terminal) ... ok
+test_search_tracks_changes (test_memory.MemoryTests.test_search_tracks_changes) ... ok
+test_allowlisted_build_field_only (test_pkg_metadata.PkgMetadataTests.test_allowlisted_build_field_only) ... ok
+test_duplicate_sfo_rejected (test_pkg_metadata.PkgMetadataTests.test_duplicate_sfo_rejected) ... ok
+test_encrypted_entry_never_read (test_pkg_metadata.PkgMetadataTests.test_encrypted_entry_never_read) ... ok
+test_entry_bounds_and_metadata_overlap (test_pkg_metadata.PkgMetadataTests.test_entry_bounds_and_metadata_overlap) ... ok
+test_invalid_magic_and_size (test_pkg_metadata.PkgMetadataTests.test_invalid_magic_and_size) ... ok
+test_non_plaintext_only_reads_magic (test_pkg_metadata.PkgMetadataTests.test_non_plaintext_only_reads_magic) ... ok
+test_non_sfo_payload_never_read (test_pkg_metadata.PkgMetadataTests.test_non_sfo_payload_never_read) ... ok
+test_overlap_protected_entry_rejected (test_pkg_metadata.PkgMetadataTests.test_overlap_protected_entry_rejected) ... ok
+test_oversized_sfo_never_read (test_pkg_metadata.PkgMetadataTests.test_oversized_sfo_never_read) ... ok
+test_table_limit_and_bounds (test_pkg_metadata.PkgMetadataTests.test_table_limit_and_bounds) ... ok
+test_truncated_headers (test_pkg_metadata.PkgMetadataTests.test_truncated_headers) ... ok
+test_valid_plaintext_metadata (test_pkg_metadata.PkgMetadataTests.test_valid_plaintext_metadata) ... ok
+test_bundle_cap_omits_full_manifest_explicitly (test_probe.ProbeTests.test_bundle_cap_omits_full_manifest_explicitly) ... ok
+test_changed_file_hash_discarded (test_probe.ProbeTests.test_changed_file_hash_discarded) ... ok
+test_empty_directory_is_not_usable (test_probe.ProbeTests.test_empty_directory_is_not_usable) ... ok
+test_full_hash_manifest_and_metadata_only_bundle (test_probe.ProbeTests.test_full_hash_manifest_and_metadata_only_bundle) ... ok
+test_invalid_sfo_is_explicit_nonzero_but_still_hashed (test_probe.ProbeTests.test_invalid_sfo_is_explicit_nonzero_but_still_hashed) ... ok
+test_link_and_reparse_detection (test_probe.ProbeTests.test_link_and_reparse_detection) ... ok
+test_no_output_in_source_and_no_overwrite (test_probe.ProbeTests.test_no_output_in_source_and_no_overwrite) ... ok
+test_read_failure_does_not_claim_complete (test_probe.ProbeTests.test_read_failure_does_not_claim_complete) ... ok
+test_reparse_entry_skipped_without_reading_payload (test_probe.ProbeTests.test_reparse_entry_skipped_without_reading_payload) ... ok
+test_sfo_table_and_duplicate_bounds (test_probe.ProbeTests.test_sfo_table_and_duplicate_bounds) ... ok
+test_symlink_never_hashed_when_supported (test_probe.ProbeTests.test_symlink_never_hashed_when_supported) ... skipped 'OS does not permit creating symlinks for this account'
+test_valid_elf_and_out_of_bounds_segment (test_probe.ProbeTests.test_valid_elf_and_out_of_bounds_segment) ... ok
+test_windows_cross_api_creation_change_time_difference (test_probe.ProbeTests.test_windows_cross_api_creation_change_time_difference) ... ok
+
+----------------------------------------------------------------------
+Ran 29 tests in 0.398s
+
+OK (skipped=1)
+{"complete": false, "files_hashed": 0, "bytes_hashed": 0, "errors": 1, "skipped": 0}
+Reports: <synthetic temporary directory>
+{"complete": false, "files_hashed": 1, "bytes_hashed": 7, "errors": 1, "skipped": 0}
+Reports: <synthetic temporary directory>

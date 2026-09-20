@@ -6,7 +6,8 @@
 - TOOL-002: Windows SQLite connection lifecycle test exposed an open-handle cleanup
   failure. Explicit connection closure implemented; regression rerun passed.
 - INFRA-001: Local author identity configured from verified GitHub account. Remote
-  creation awaits browser sign-in; no remote push.
+  creation awaits explicit public visibility approval after automatic review rejected
+  the creation click; browser is signed in. No remote push.
 - RUNTIME-001: Native runtime does not exist; all game functionality unvalidated.
 - TEST-001: Actual symlink-creation test may skip without Windows privilege; modeled
   reparse detection still tested. Do not report skipped execution as a pass.
@@ -14,3 +15,5 @@
   not been supplied or inspected. Probe does not decrypt package payloads.
 - SOURCE-003: Supplied 1.02 patch metadata verified; latest official version and
   installed patched state not verified. Do not merge patch files speculatively.
+- TOOL-003 (FIXED): Search CLI failed on Japanese content with legacy terminal
+  encoding. Escaped JSON preserves text and passes strict-ASCII subprocess regression.
