@@ -41,6 +41,6 @@ The database and exports are private and ignored by Git.
 See PROJECT_STATE.md, BUILD_WINDOWS.md, LEGAL_BOUNDARIES.md, and the complete
 user instructions in docs/CANONICAL_PROJECT_INSTRUCTIONS.md.
 
-GitHub public repository creation is pending visibility approval; no public release exists.
+Project repository: https://github.com/Ahmed-alghamdi9900/sumeragi-pc. No playable release exists.
 A redistribution license has not yet
 been selected; do not represent this initial repository as licensed for release.

@@ -5,9 +5,8 @@
   mismatch. Regression tested; subsequent two-package scan succeeded. Failed report retained.
 - TOOL-002: Windows SQLite connection lifecycle test exposed an open-handle cleanup
   failure. Explicit connection closure implemented; regression rerun passed.
-- INFRA-001: Local author identity configured from verified GitHub account. Remote
-  creation awaits explicit public visibility approval after automatic review rejected
-  the creation click; browser is signed in. No remote push.
+- INFRA-001: Owner-created public repository verified. Automatic review rejected
+  source push pending explicit payload/publication approval. No upload or remote CI.
 - RUNTIME-001: Native runtime does not exist; all game functionality unvalidated.
 - TEST-001: Actual symlink-creation test may skip without Windows privilege; modeled
   reparse detection still tested. Do not report skipped execution as a pass.

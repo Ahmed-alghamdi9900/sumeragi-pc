@@ -27,6 +27,8 @@ game-file inventory. Private compact bundle: reports/initial-20260920-r3/SUMERAG
 
 GitHub owner verified through connector: Ahmed-alghamdi9900. Local Git uses that
 login and GitHub noreply address; initial branch codex/initial-reconnaissance.
-Initial commit fa33d8a saved the reviewed startup batch. No remote exists yet.
-Browser is signed in; public repository creation awaits explicit visibility approval
-after automatic approval review rejected the creation click. Nothing is published.
+Initial commits fa33d8a and a0c8b0c saved the reviewed startup batch and terminal fix.
+Owner-created public repository verified: https://github.com/Ahmed-alghamdi9900/sumeragi-pc.
+Source push was rejected by automatic approval review pending explicit approval of
+the public source payload. Nothing has been uploaded; remote CI has not run.
+Game packages and private analysis remain local and excluded from Git.

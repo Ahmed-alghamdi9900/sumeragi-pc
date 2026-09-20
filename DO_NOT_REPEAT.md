@@ -5,11 +5,10 @@
 - Workspace initially contained only an empty `.git`; no prior build or game data.
 - No Git remote or Git author identity configured at startup. GitHub connector later
   verified owner Ahmed-alghamdi9900 (ID 82968596); local Git now uses the account
-  login and GitHub's ID+login noreply address. Remote still pending creation.
+  login and GitHub's ID+login noreply address.
 - Do not infer engine, exact edition, patch, DLC completeness, or executable
   accessibility from the game's marketing name or an external folder filename.
 - Synthetic parser passes do not establish game compatibility or boot milestones.
-- GitHub connector can list/manipulate existing repositories but has no repository
-  creation endpoint. It currently lists zero accessible repositories. Browser
-  browser is now signed in. Automatic review rejected public creation until explicit
-  visibility approval; pending question asks public versus private. Do not bypass.
+- Automatic review initially rejected public creation. The owner subsequently
+  created sumeragi-pc publicly; connector verified repository ID 1378055833 and
+  push/admin permissions. Continue with this existing repository; no creation needed.
