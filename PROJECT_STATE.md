@@ -29,6 +29,7 @@ GitHub owner verified through connector: Ahmed-alghamdi9900. Local Git uses that
 login and GitHub noreply address; initial branch codex/initial-reconnaissance.
 Initial commits fa33d8a and a0c8b0c saved the reviewed startup batch and terminal fix.
 Owner-created public repository verified: https://github.com/Ahmed-alghamdi9900/sumeragi-pc.
-Source push was rejected by automatic approval review pending explicit approval of
-the public source payload. Nothing has been uploaded; remote CI has not run.
+Owner explicitly approved publication. Reviewed source was pushed to main at
+f97f7421fdfbf9572a7e24843b4e47de0332f68e. Windows/Linux synthetic CI was queued:
+https://github.com/Ahmed-alghamdi9900/sumeragi-pc/actions/runs/35496971282.
 Game packages and private analysis remain local and excluded from Git.
