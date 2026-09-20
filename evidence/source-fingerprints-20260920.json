@@ -1,0 +1,9 @@
+{
+  "tools/local_probe/scan_game.py": "d08669accfe7dbe82c5005c383e16ab8948b9944dd0ee9c19aa823a1ec0142a0",
+  "tools/pkg_metadata.py": "9f446a93aa07e523be227b7fab7f3ec76cfcdea2b61c17dd4c369da5d78fcfb3",
+  "tools/project_memory.py": "5a8245a5b24d1df171ed4db26ac531900979ec15c2bd11e15c74ab2624e334e6",
+  "tools/record_initial_findings.py": "d30f642a3570e6848ba4042c9635fe023257f22e54ab2c351328a0ceb05a50c9",
+  "tests/test_memory.py": "f93a58bf36649cdeace2409046faadabb644dace5a35b12943e27bb2d08a6f06",
+  "tests/test_pkg_metadata.py": "c7f3427a113882c22801938538d0da1431efdf95de2335b4cc092752c49e637b",
+  "tests/test_probe.py": "8c6a21079342503cb2376b62dc6d0143d15750c13548bb7d15f978761050608d"
+}

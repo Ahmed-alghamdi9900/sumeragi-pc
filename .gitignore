@@ -1,0 +1,16 @@
+# Local commercial data and derived analysis never enter public source control.
+/local/
+/cache/
+/reports/
+/imports/
+/SUMERAGI_PROJECT.sqlite*
+__pycache__/
+*.pyc
+*.pkg
+*.self
+*.sprx
+*.elf
+*.bin
+*.zip
+*.dmp
+/build/

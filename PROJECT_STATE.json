@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "canonical_target": "PS4 Sengoku BASARA 4 Sumeragi Anniversary Edition",
+  "edition_verification": "UNKNOWN",
+  "current_milestone": "Phase 1 forensic inventory; M0 native build not started",
+  "runtime_status": "NOT_IMPLEMENTED",
+  "architecture": "DEFERRED_PENDING_EVIDENCE",
+  "port_completion_percent": 0,
+  "translation_completion_percent": 0,
+  "completion_note": "No game behavior or translations validated; total engineering scope unknown.",
+  "github_remote": null,
+  "source": {"representation": "base and update PKG", "observed_bytes": 29916069888, "package_count": 2, "inventory_status": "PACKAGE_FILES_HASHED", "title_id": "CUSA01159", "base_app_ver": "01.00", "update_app_ver": "01.02", "latest_official_patch_verified": false, "patch_applied": false, "internal_game_files_inventory": "NOT_AVAILABLE", "user_requests_latest_update": true},
+  "validation": {"tooling": "27_PASS_1_SKIP", "real_game": "NOT_RUN", "independent_review": "COMPLETED"}
+}
