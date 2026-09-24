@@ -24,3 +24,6 @@
   Do not repeat without source changes; next experiment concerns bounded payload decoding.
 - SELF header-derived entry range read successfully; no instruction or behavior validation.
 - Owner cancelled the pending GitHub identity verification/privacy change. Leave public.
+
+- One ARC zlib entry and numeric SELF dynamic table inspected on 2026-09-24.
+  See evidence/payload-dynamic-20260924.md; do not mistake this for asset/runtime support.

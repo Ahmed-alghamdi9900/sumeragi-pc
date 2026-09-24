@@ -16,7 +16,7 @@ PS4 behavioral comparison exists.
 
 Implemented initial local probe, local SQLite registry, portable exports, catalog
 schemas, synthetic test infrastructure and public-project documentation. The final
-suite ran 48 tests: 47 passed, one skipped for Windows symlink-creation permission.
+suite ran 58 tests: 57 passed, one skipped for Windows symlink-creation permission.
 Independent reviews completed; SELF byte-order finding fixed and regression tested.
 
 Current private inventory: reports/extracted-20260920/SUMERAGI_INITIAL_ANALYSIS.zip.
@@ -24,13 +24,16 @@ Executable present: Image0/eboot.bin (24,119,184 bytes), SELF candidate signatur
 Asset extension counts include 6,324 .arc, 1,248 .sspr, 153 .mp4 and 119 .stqr.
 Extensions are evidence for selecting probes, not proven format or engine identity.
 All 6,324 ARC candidate tables passed range checks (203,531 entries, no overlaps).
-No archive payload was read or decoded. No decryption
+One ARC entry validated as a complete zlib stream (75,598 stored bytes to
+357,840 decoded bytes); decoded data was not written. A bounded executable dynamic
+table read found 215 numeric tags, including 46 standard DT_NEEDED records.
+Dependency names, relocation payloads and runtime behavior remain unverified. No decryption
 was performed by project tools. Detailed feasibility work remains pending.
 
 Historical package access probe: both outer PFS headers declared encryption (mode
 0xD); see evidence/pfs-access-20260920.md. The user-provided extraction supersedes
 that input blocker. A bounded SELF entry range was read; instruction semantics,
-imports, relocation and execution remain untested.
+dependency resolution, relocation and execution remain untested.
 
 GitHub owner verified through connector: Ahmed-alghamdi9900. Local Git uses that
 login and GitHub noreply address; initial branch codex/initial-reconnaissance.
@@ -42,3 +45,5 @@ Windows/Linux synthetic CI: https://github.com/Ahmed-alghamdi9900/sumeragi-pc/ac
 Game packages and private analysis remain local and excluded from Git.
 
 Owner deferred the private-visibility change; repository remains public.
+
+Reviewed probe revision d02ecb7 passed Windows/Linux CI run 35955727739.

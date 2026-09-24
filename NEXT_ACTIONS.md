@@ -9,15 +9,17 @@
 5. Verify edition/patch/content against local evidence and official content list.
 6. Choose the smallest executable or archive experiment; architecture remains open.
 7. Done: owner explicitly approved source publication; initial source pushed to main.
-   Windows/Linux synthetic CI passed for adf19d3. Game data/private reports excluded.
+   Windows/Linux synthetic CI passed for d02ecb7. Game data/private reports excluded.
 
 Extracted Sc0/param.sfo exactly matches supplied 1.02 update SFO. Metadata confirms
 1.02 presence, not completeness of the overlay. Latest official patch remains unknown.
 Owner deferred the private-visibility change; continue with the public repository.
 
 Next bounded experiments after reviewed probe publication:
-- Assess one ARC payload's compression with strict output bounds and synthetic tests.
-- Inspect executable dependency/relocation metadata before choosing a runtime approach.
+- Done: one bounded ARC entry validates as a complete zlib stream.
+- Next: test a small stratified entry sample; characterize resource headers locally.
+- Done: mapped numeric dynamic table, 215 tags and 46 standard DT_NEEDED records.
+- Next: validate string-table and relocation-table ranges before resolving dependencies.
 - Compare patch payload provenance if independent base/update files become available.
 
 Completed table pass: all 6,324 ARC files, 203,531 entries, no range errors or overlaps.

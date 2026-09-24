@@ -21,11 +21,11 @@
     "complete_patch_overlay_verified": false,
     "edition_verification": "UNKNOWN"
   },
-  "payload_access": "ARC_TABLES_IN_BOUNDS_AND_BOUNDED_SELF_ENTRY_READ",
+  "payload_access": "ONE_ARC_ZLIB_ENTRY_AND_NUMERIC_SELF_DYNAMIC_TABLE_READ",
   "validation": {
-    "tooling": "47_PASS_1_SKIP",
+    "tooling": "57_PASS_1_SKIP",
     "real_game": "NOT_RUN",
-    "independent_review": "COMPLETED_INITIAL_PFS_SELF_ARC_ENDIAN_FINDING_FIXED"
+    "independent_review": "PAYLOAD_DYNAMIC_REVIEWED_FINDINGS_FIXED"
   },
   "github_visibility": "PUBLIC_PRIVACY_CHANGE_DEFERRED_BY_OWNER"
 }
