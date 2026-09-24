@@ -23,9 +23,19 @@
   },
   "payload_access": "32_SAMPLED_ARC_ENTRIES_DECODED_46_DEPENDENCY_NAMES_READ",
   "validation": {
-    "tooling": "61_PASS_1_SKIP",
+    "tooling": "66_PASS_1_SKIP",
     "real_game": "NOT_RUN",
-    "independent_review": "DEPENDENCY_PARSER_REVIEW_COMPLETE_NO_FINDINGS"
+    "independent_review": "SYMBOL_RELOCATION_AND_GHIDRA_REVIEWS_COMPLETE_FINDINGS_FIXED"
   },
-  "github_visibility": "PUBLIC_PRIVACY_CHANGE_DEFERRED_BY_OWNER"
+  "github_visibility": "PUBLIC_PRIVACY_CHANGE_DEFERRED_BY_OWNER",
+  "executable_analysis": {
+    "dynamic_symbols": 566,
+    "relocations": 126042,
+    "local_load_segment_copies": 2,
+    "entry_instructions_decoded": 50,
+    "entry_bytes_decoded": 256,
+    "high_level_decompilation": "BOUNDED_ENTRY_WINDOW_ONLY_UNVALIDATED",
+    "runtime_validation": "NOT_RUN",
+    "ghidra_version": "12.1.4"
+  }
 }

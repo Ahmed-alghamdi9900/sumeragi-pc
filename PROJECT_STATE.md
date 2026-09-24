@@ -16,7 +16,7 @@ PS4 behavioral comparison exists.
 
 Implemented initial local probe, local SQLite registry, portable exports, catalog
 schemas, synthetic test infrastructure and public-project documentation. The final
-suite ran 62 tests: 61 passed, one skipped for Windows symlink-creation permission.
+suite ran 67 tests: 66 passed, one skipped for Windows symlink-creation permission.
 Independent reviews completed; SELF byte-order finding fixed and regression tested.
 
 Current private inventory: reports/extracted-20260920/SUMERAGI_INITIAL_ANALYSIS.zip.
@@ -30,12 +30,18 @@ table read found 215 numeric tags, including 46 standard DT_NEEDED records.
 46 distinct dependency names recovered into a private report; one exact basename
 match in the inventory does not establish availability or ABI compatibility.
 A broader sample validated 32 zlib entries across 24 archives and 32 numeric type IDs.
-Relocation payloads and runtime behavior remain unverified. No decryption
+Symbol/relocation audit inspected 566 dynamic symbols and 126,042 relocations.
+All inspected dynamic symbols have undefined section indexes; this is not a
+whole-executable debug-symbol claim. Known-width targets lie inside load ranges.
+Two local load-segment copies (20,950,064 bytes) were hash-verified. Capstone 5.0.6
+decoded 50 instructions across a 256-byte entry window. Linear disassembly only;
+Ghidra 12.1.4 then completed bounded entry-window decompilation (30 instructions).
+Generated C remains private and unvalidated; no relocation application or runtime validation. No decryption
 was performed by project tools. Detailed feasibility work remains pending.
 
 Historical package access probe: both outer PFS headers declared encryption (mode
 0xD); see evidence/pfs-access-20260920.md. The user-provided extraction supersedes
-that input blocker. A bounded SELF entry range was read; instruction semantics,
+that input blocker. Entry-point linear disassembly exists; instruction semantics,
 dependency resolution, relocation and execution remain untested.
 
 GitHub owner verified through connector: Ahmed-alghamdi9900. Local Git uses that
@@ -52,3 +58,10 @@ Owner deferred the private-visibility change; repository remains public.
 Reviewed probe revision d02ecb7 passed Windows/Linux CI run 35955727739.
 
 Reviewed revision f9eb12d passed Windows/Linux CI run 35963824052.
+
+Current authoritative tooling lives in Project alongside the game Image0/Sc0 directories.
+Latest published dependency batch 5ee496e passed both CI platforms.
+
+Ghidra and Temurin JDK 21 installed only under ignored local/tools after published
+SHA-256 verification. Synthetic return-zero decompilation and oversize rejection
+passed. Compiler specification gcc is provisional; PS4 ABI compatibility unverified.

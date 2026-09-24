@@ -32,3 +32,12 @@
   inventory match, which does not establish runtime availability. No missing-library claim.
 - Broader ARC sample completed: 32 type IDs/24 archives, 32 successful zlib streams.
   Deterministic selection and per-entry private evidence saved; not an all-assets claim.
+
+- Executable structural audit completed: 566 dynamic symbols, 126,042 relocations,
+  zero known-width relocation targets outside load memory ranges. Relocations not applied.
+- Capstone 5.0.6 is installed only under local/python-deps. First bounded linear
+  entry disassembly decoded 50 instructions/256 bytes; not high-level decompilation.
+
+- Ghidra 12.1.4 and Temurin JDK 21 are already installed under local/tools.
+  Bounded entry decompilation completed; result is private and semantically unvalidated.
+  Always use fresh imports with automatic analysis disabled for AnalyzeEntry.java.

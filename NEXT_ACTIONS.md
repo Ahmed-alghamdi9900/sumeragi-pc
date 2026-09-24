@@ -21,8 +21,12 @@ Next bounded experiments after reviewed probe publication:
 - Next: characterize selected decoded resource headers locally with format-specific bounds.
 - Done: mapped numeric dynamic table, 215 tags and 46 standard DT_NEEDED records.
 - Done: bounded string-table mapping recovered 46 unique dependency names locally.
-- Next: inspect relocation/symbol table ranges and distinguish bundled/system dependencies
-  using identities rather than filename matching.
+- Done: symbol/relocation tables structurally audited; two mapped local analysis segments
+  verified and bounded entry disassembly completed.
+- Done: Ghidra local setup and bounded entry decompilation with explicit load mappings.
+- Next: validate entry control flow, imported symbol/module associations and relocation
+  semantics before expanding decompilation or choosing a runtime architecture.
+- Distinguish bundled/system dependencies using identities rather than filename matching.
 - Compare patch payload provenance if independent base/update files become available.
 
 Completed table pass: all 6,324 ARC files, 203,531 entries, no range errors or overlaps.
