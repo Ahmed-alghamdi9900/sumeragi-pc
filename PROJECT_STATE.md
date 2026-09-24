@@ -1,13 +1,13 @@
 # Current state
 
 Canonical target: user-owned PS4 Sengoku BASARA 4 Sumeragi Anniversary Edition.
-Exact internal build, patch and content remain unverified. The provided directory
-now contains a 29,887,234,048-byte base package and a 28,835,840-byte update package.
-Both were fully SHA-256 hashed. Readable PARAM.SFO metadata reports CUSA01159,
-base APP_VER 01.00/category gd and update APP_VER 01.02/category gp, with matching
-content IDs. This does not authenticate packages or establish installed state.
-No filename-based edition conclusion. User requests latest update; 1.02 is the
-supplied candidate, but latest official patch status has not been independently verified.
+The user replaced the packages with an extracted tree (Image0 and Sc0). Full read-only
+inventory succeeded: 7,894 files, 742 directories, 30,057,475,874 bytes, no errors/skips.
+Sc0/param.sfo reports CUSA01159, APP_VER 01.02, category gp; its SHA-256 exactly
+matches the previously inspected update package's plaintext PARAM.SFO. Local
+changeinfo.xml lists 01.02 and 01.01. Update metadata is confirmed present. A complete
+base/update overlay and latest official patch status are not yet independently proven.
+Anniversary content remains unverified; no filename-based edition conclusion.
 
 Current milestone: Phase 1 forensic inventory. Native M0 and all game milestones
 remain open. Port completion: 0% validated game functionality. Translation: 0%
@@ -16,20 +16,29 @@ PS4 behavioral comparison exists.
 
 Implemented initial local probe, local SQLite registry, portable exports, catalog
 schemas, synthetic test infrastructure and public-project documentation. The final
-suite ran 29 tests: 28 passed, one skipped for Windows symlink-creation permission.
-Independent review completed; see evidence/initial-batch-20260920.md.
+suite ran 48 tests: 47 passed, one skipped for Windows symlink-creation permission.
+Independent reviews completed; SELF byte-order finding fixed and regression tested.
 
-User confirms only the packages are available. The present probe reads public
-metadata only; executable, assets, engine, Anniversary content and patch application
-remain uninspected. No decryption was attempted. Next game-dependent work requires
-accessible executable/assets; do not claim the package inventory is a full internal
-game-file inventory. Private compact bundle: reports/initial-20260920-r3/SUMERAGI_INITIAL_ANALYSIS.zip.
+Current private inventory: reports/extracted-20260920/SUMERAGI_INITIAL_ANALYSIS.zip.
+Executable present: Image0/eboot.bin (24,119,184 bytes), SELF candidate signature.
+Asset extension counts include 6,324 .arc, 1,248 .sspr, 153 .mp4 and 119 .stqr.
+Extensions are evidence for selecting probes, not proven format or engine identity.
+All 6,324 ARC candidate tables passed range checks (203,531 entries, no overlaps).
+No archive payload was read or decoded. No decryption
+was performed by project tools. Detailed feasibility work remains pending.
+
+Historical package access probe: both outer PFS headers declared encryption (mode
+0xD); see evidence/pfs-access-20260920.md. The user-provided extraction supersedes
+that input blocker. A bounded SELF entry range was read; instruction semantics,
+imports, relocation and execution remain untested.
 
 GitHub owner verified through connector: Ahmed-alghamdi9900. Local Git uses that
 login and GitHub noreply address; initial branch codex/initial-reconnaissance.
 Initial commits fa33d8a and a0c8b0c saved the reviewed startup batch and terminal fix.
 Owner-created public repository verified: https://github.com/Ahmed-alghamdi9900/sumeragi-pc.
 Owner explicitly approved publication. Reviewed source was pushed to main at
-f97f7421fdfbf9572a7e24843b4e47de0332f68e. Windows/Linux synthetic CI was queued:
-https://github.com/Ahmed-alghamdi9900/sumeragi-pc/actions/runs/35496971282.
+f97f7421fdfbf9572a7e24843b4e47de0332f68e. Published follow-up adf19d3 passed both
+Windows/Linux synthetic CI: https://github.com/Ahmed-alghamdi9900/sumeragi-pc/actions/runs/35497006125.
 Game packages and private analysis remain local and excluded from Git.
+
+Owner deferred the private-visibility change; repository remains public.

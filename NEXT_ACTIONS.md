@@ -4,14 +4,21 @@
 2. Done: hash both supplied packages and inspect accessible public metadata.
 3. Done: associate findings with source manifests in SQLite, explicitly recording
    that metadata and full hashes are separate read-only observations.
-4. Determine whether accessible executable and asset data exists. If only opaque
-   package payload is available, request the smallest accessible metadata/files
-   needed; never request full-game uploads or implement bypass/decryption.
+4. Done: extracted inventory, SELF entry mapping and all ARC candidate table bounds.
+   Payload decoding and executable semantics remain unverified.
 5. Verify edition/patch/content against local evidence and official content list.
 6. Choose the smallest executable or archive experiment; architecture remains open.
 7. Done: owner explicitly approved source publication; initial source pushed to main.
-   Check remote Windows/Linux synthetic CI. Game data and private reports excluded.
+   Windows/Linux synthetic CI passed for adf19d3. Game data/private reports excluded.
 
-Current source limitation: owner confirms only packages, no extracted folder.
-Preserve the 1.02 update as a candidate canonical patch. Verify latest official
-patch and correct base/update overlay before future executable analysis.
+Extracted Sc0/param.sfo exactly matches supplied 1.02 update SFO. Metadata confirms
+1.02 presence, not completeness of the overlay. Latest official patch remains unknown.
+Owner deferred the private-visibility change; continue with the public repository.
+
+Next bounded experiments after reviewed probe publication:
+- Assess one ARC payload's compression with strict output bounds and synthetic tests.
+- Inspect executable dependency/relocation metadata before choosing a runtime approach.
+- Compare patch payload provenance if independent base/update files become available.
+
+Completed table pass: all 6,324 ARC files, 203,531 entries, no range errors or overlaps.
+Completed SELF probe: header-derived entry mapping and bounded 64-byte read only.

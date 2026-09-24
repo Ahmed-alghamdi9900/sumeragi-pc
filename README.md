@@ -1,9 +1,11 @@
 # Sumeragi native PC research project
 
 Target: user-owned **PS4 Sengoku BASARA 4 Sumeragi Anniversary Edition**.
-This is initial reconnaissance tooling, **not a playable port**. Package metadata
-identifies CUSA01159 base 01.00 and update 01.02. Anniversary content, installed patch
-state, engine, renderer and native compatibility remain unverified.
+This is initial reconnaissance tooling, **not a playable port**. Extracted metadata
+identifies CUSA01159 update 01.02 and exactly matches the supplied patch metadata.
+The extracted inventory contains 7,894 files; all 6,324 ARC candidate tables passed
+bounds checks. A bounded SELF entry range is readable. Anniversary content, full
+patch overlay, engine, renderer and native compatibility remain unverified.
 
 ## First local inventory
 

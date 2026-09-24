@@ -41,7 +41,7 @@ def unchanged(a, b):
 
 
 @contextmanager
-def open_source(path):
+def open_source(path, buffering=-1):
     """Open a regular file without following its final symlink/reparse component."""
     before = path.lstat()
     if is_link(before) or not stat.S_ISREG(before.st_mode):
@@ -67,7 +67,7 @@ def open_source(path):
             raise
     else:
         fd = os.open(path, os.O_RDONLY | getattr(os, "O_NOFOLLOW", 0))
-    with os.fdopen(fd, "rb") as stream:
+    with os.fdopen(fd, "rb", buffering=buffering) as stream:
         opened = os.fstat(stream.fileno())
         if is_link(opened) or not stat.S_ISREG(opened.st_mode) or not unchanged(before, opened):
             raise OSError("source changed during open")

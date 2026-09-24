@@ -9,6 +9,23 @@
   "translation_completion_percent": 0,
   "completion_note": "No game behavior or translations validated; total engineering scope unknown.",
   "github_remote": "https://github.com/Ahmed-alghamdi9900/sumeragi-pc.git",
-  "source": {"representation": "base and update PKG", "observed_bytes": 29916069888, "package_count": 2, "inventory_status": "PACKAGE_FILES_HASHED", "title_id": "CUSA01159", "base_app_ver": "01.00", "update_app_ver": "01.02", "latest_official_patch_verified": false, "patch_applied": false, "internal_game_files_inventory": "NOT_AVAILABLE", "user_requests_latest_update": true},
-  "validation": {"tooling": "28_PASS_1_SKIP", "real_game": "NOT_RUN", "independent_review": "COMPLETED"}
+  "source": {
+    "representation": "extracted Image0/Sc0 tree",
+    "observed_bytes": 30057475874,
+    "file_count": 7894,
+    "directory_count": 742,
+    "inventory_status": "COMPLETE_NO_ERRORS_OR_SKIPS",
+    "title_id": "CUSA01159",
+    "update_metadata_app_ver": "01.02",
+    "latest_official_patch_verified": false,
+    "complete_patch_overlay_verified": false,
+    "edition_verification": "UNKNOWN"
+  },
+  "payload_access": "ARC_TABLES_IN_BOUNDS_AND_BOUNDED_SELF_ENTRY_READ",
+  "validation": {
+    "tooling": "47_PASS_1_SKIP",
+    "real_game": "NOT_RUN",
+    "independent_review": "COMPLETED_INITIAL_PFS_SELF_ARC_ENDIAN_FINDING_FIXED"
+  },
+  "github_visibility": "PUBLIC_PRIVACY_CHANGE_DEFERRED_BY_OWNER"
 }
