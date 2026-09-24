@@ -16,7 +16,7 @@ PS4 behavioral comparison exists.
 
 Implemented initial local probe, local SQLite registry, portable exports, catalog
 schemas, synthetic test infrastructure and public-project documentation. The final
-suite ran 58 tests: 57 passed, one skipped for Windows symlink-creation permission.
+suite ran 62 tests: 61 passed, one skipped for Windows symlink-creation permission.
 Independent reviews completed; SELF byte-order finding fixed and regression tested.
 
 Current private inventory: reports/extracted-20260920/SUMERAGI_INITIAL_ANALYSIS.zip.
@@ -27,7 +27,10 @@ All 6,324 ARC candidate tables passed range checks (203,531 entries, no overlaps
 One ARC entry validated as a complete zlib stream (75,598 stored bytes to
 357,840 decoded bytes); decoded data was not written. A bounded executable dynamic
 table read found 215 numeric tags, including 46 standard DT_NEEDED records.
-Dependency names, relocation payloads and runtime behavior remain unverified. No decryption
+46 distinct dependency names recovered into a private report; one exact basename
+match in the inventory does not establish availability or ABI compatibility.
+A broader sample validated 32 zlib entries across 24 archives and 32 numeric type IDs.
+Relocation payloads and runtime behavior remain unverified. No decryption
 was performed by project tools. Detailed feasibility work remains pending.
 
 Historical package access probe: both outer PFS headers declared encryption (mode
@@ -47,3 +50,5 @@ Game packages and private analysis remain local and excluded from Git.
 Owner deferred the private-visibility change; repository remains public.
 
 Reviewed probe revision d02ecb7 passed Windows/Linux CI run 35955727739.
+
+Reviewed revision f9eb12d passed Windows/Linux CI run 35963824052.

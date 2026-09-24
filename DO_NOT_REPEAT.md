@@ -27,3 +27,8 @@
 
 - One ARC zlib entry and numeric SELF dynamic table inspected on 2026-09-24.
   See evidence/payload-dynamic-20260924.md; do not mistake this for asset/runtime support.
+
+- Dependency names recovered locally (46 unique); exact basename matching found one
+  inventory match, which does not establish runtime availability. No missing-library claim.
+- Broader ARC sample completed: 32 type IDs/24 archives, 32 successful zlib streams.
+  Deterministic selection and per-entry private evidence saved; not an all-assets claim.

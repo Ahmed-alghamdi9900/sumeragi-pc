@@ -21,11 +21,11 @@
     "complete_patch_overlay_verified": false,
     "edition_verification": "UNKNOWN"
   },
-  "payload_access": "ONE_ARC_ZLIB_ENTRY_AND_NUMERIC_SELF_DYNAMIC_TABLE_READ",
+  "payload_access": "32_SAMPLED_ARC_ENTRIES_DECODED_46_DEPENDENCY_NAMES_READ",
   "validation": {
-    "tooling": "57_PASS_1_SKIP",
+    "tooling": "61_PASS_1_SKIP",
     "real_game": "NOT_RUN",
-    "independent_review": "PAYLOAD_DYNAMIC_REVIEWED_FINDINGS_FIXED"
+    "independent_review": "DEPENDENCY_PARSER_REVIEW_COMPLETE_NO_FINDINGS"
   },
   "github_visibility": "PUBLIC_PRIVACY_CHANGE_DEFERRED_BY_OWNER"
 }
